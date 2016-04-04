@@ -1,0 +1,17 @@
+spring:
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        # url: jdbc:mysql://mysqlserver:3306/allenway?useUnicode=true&characterEncoding=UTF-8
+        url: jdbc:mysql://127.0.0.1:3306/allenway?useUnicode=true&characterEncoding=UTF-8
+        password: 123456
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+            naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy
+        properties:
+            hibernate.globally_quoted_identifiers: true
+            hibernate.show_sql: false
+            hibernate.format_sql: true
+
+
