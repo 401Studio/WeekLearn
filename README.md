@@ -3,7 +3,13 @@
 - 第一周（2016.3.28 - 2016.4.3）：
   - Topic：RabbitMQ
   - Host： wuhuachuan
-  - [RabbitMQ：Spring 集成 RabbitMQ 与其概念，消息持久化，ACK机制等](https://github.com/401Studio/WeekLearn/issues/2)
+  - Articles：
+    - [RabbitMQ：作用，模型，重要概念](https://github.com/pzxwhc/MineKnowContainer/issues/38)
+    - [RabbitMQ：常用三种交换机（Direct，Topic，Fanout）](https://github.com/pzxwhc/MineKnowContainer/issues/42)
+    - [RabbitMQ：Hello World Demo（基于 spring，非原生模式）](https://github.com/pzxwhc/MineKnowContainer/issues/47)
+    - [RabbitMQ：Spring对RabbitMQ的注解支持（@EnableRabbit，@RabbitListener，@RabbitHandler）](https://github.com/pzxwhc/MineKnowContainer/issues/48)
+    - [RabbitMQ：Publisher的消息确认机制](https://github.com/pzxwhc/MineKnowContainer/issues/49)
+    - [RabbitMQ：Consumer的ack机制 和 死信（Dead Letter）](https://github.com/pzxwhc/MineKnowContainer/issues/50)
 
 
 - 第三周 (2016.04.21 - 2016.05.24)
