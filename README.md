@@ -25,3 +25,13 @@
   		- 熟悉mysql主从原理、配置 --4
 		- 掌握mysql分库分表 --3
 		- 了解mysql瓶颈、性能优化 --6
+- 第四周（2016.05.16 - 2016.22）
+    - Topic : C3P0
+    - Host: guofeipeng
+    - DBMS: MySql
+    - Target:
+        - spring xml配置项深入理解
+        - 多数据源配置
+        - 池管理机制（官方文档+源码分析）
+        - 重连机制
+        - 性能测试
