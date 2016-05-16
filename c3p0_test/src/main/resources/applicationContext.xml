@@ -11,6 +11,5 @@
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
     
     <context:component-scan base-package="com.demo.**" />
-    <aop:aspectj-autoproxy />
     <import resource="datasouce.xml" />
 </beans>

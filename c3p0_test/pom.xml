@@ -8,6 +8,17 @@
     <properties>
         <java-version>1.7</java-version>
         <spring.framework.version>3.2.2.RELEASE</spring.framework.version>
+        <c3p0.version>0.9.1</c3p0.version>
+        <mysql.version>5.1.29</mysql.version>
+        <org.mybatis.version>3.1.1</org.mybatis.version>
+        <org.mybatis.spring.version>1.2.2</org.mybatis.spring.version>
+        <org.spring.jdbc.version>3.1.1.RELEASE</org.spring.jdbc.version>
+        <maven.plugin.compile.version>2.3.2</maven.plugin.compile.version>
+        <maven.plugin.war.version>2.1.1</maven.plugin.war.version>
+        <org.codehaus.mojo.build-helper-maven-plugin.version>1.5</org.codehaus.mojo.build-helper-maven-plugin.version>
+        <tomcat.plugin.version>1.1</tomcat.plugin.version>
+        <jackson.version>2.4.0</jackson.version>
+        <javax.servelt.api.version>3.1.0</javax.servelt.api.version>
     </properties>
     <dependencies>
         <dependency>
@@ -37,81 +48,44 @@
             <version>${spring.framework.version}</version>
         </dependency>
 
-
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
-
-
-        <!--aop-->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.8.2</version>
-        </dependency>
-        <dependency>
-            <groupId>cglib</groupId>
-            <artifactId>cglib</artifactId>
-            <version>2.2.2</version>
-        </dependency>
-
-
-        <!--swagger-->
-
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.4.0</version>
+            <version>${jackson.version}</version>
         </dependency>
-
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.3.1</version>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servelt.api.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.2.2</version>
-        </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.webjars</groupId>-->
-            <!--<artifactId>swagger-ui</artifactId>-->
-            <!--<version>2.1.8-M1</version>-->
-        <!--</dependency>-->
-
-        <!--c3p0-->
+        <!--database-->
         <dependency>
             <groupId>c3p0</groupId>
             <artifactId>c3p0</artifactId>
-            <version>0.9.1</version>
+            <version>${c3p0.version}</version>
         </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.29</version>
+            <version>${mysql.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.1.1</version>
+            <version>${org.mybatis.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
-            <version>1.2.2</version>
+            <version>${org.mybatis.spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>3.1.1.RELEASE</version>
+            <version>${org.spring.jdbc.version}</version>
         </dependency>
-
-
     </dependencies>
 
     <build>
@@ -119,7 +93,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>${maven.plugin.compile.version}</version>
                 <configuration>
                     <source>${java-version}</source>
                     <target>${java-version}</target>
@@ -129,7 +103,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.1.1</version>
+                <version>${maven.plugin.war.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -159,10 +133,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
-                <version>1.5</version>
-                <executions>
-
-                </executions>
+                <version>${org.codehaus.mojo.build-helper-maven-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
@@ -183,7 +154,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>tomcat-maven-plugin</artifactId>
-                <version>1.1</version>
+                <version>${tomcat.plugin.version}</version>
             </plugin>
         </plugins>
     </build>
